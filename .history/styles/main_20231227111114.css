@@ -1,0 +1,107 @@
+:root{
+    --pink: #FF3E79;
+}
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+h1{
+    font:700 28px/40px 'TT Lakes Medium';
+    position: relative;
+    padding: 0 0 0 12px;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: 0;
+    background: #41F6D7;
+    border-radius: 0 5px 5px 0;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+header{
+    position: relative;
+    padding: 24px 16px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav > div:last-child{
+    margin: 0 0 0 auto;
+}
+.burger-menu{
+    position: absolute;
+    left: -300%;
+}
+.burger__btn{
+    width: 40px;
+    height: 40px;
+    background: var(--pink);
+    border: 0;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    margin: 0 16px 0 0;
+}
+.burger__btn span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.burger__btn span:first-child{
+    top: 35%;
+}
+.burger__btn span:nth-child(2){
+    width: 13px;
+}
+.burger__btn span:last-child{
+    top: 65%;
+}
+
+.right-nav__list{
+    display: flex;
+    gap: 16px;
+    position: relative;
+}
+.logo__item{
+    position: relative;
+}
+.right-nav__list::before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    height: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    border-radius: 1px;
+    background-color: #EAEAEA;
+}
+
+.navigation__list{
+    display: flex;
+    overflow: auto;
+    gap: 16px;
+}
+.navigation__list button{
+    color: #7E7E82;
+    font: 500 16px 'TT Lakes Medium';
+    background-color: #fff;
+    padding: 8px 16px;
+}
