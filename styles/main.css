@@ -124,8 +124,9 @@ nav > div:last-child{
     border: 2px solid transparent;
     border-radius: 6px;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
-.navigation__item_active{
+.navigation__item_active, .navigation__item:hover{
     border-color: #B8FFEC;
 }
 
