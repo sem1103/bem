@@ -45,7 +45,7 @@ nav > div:last-child{
 
 .burger-menu__content{
     position: absolute;
-    left: calc(-100% - 50px);
+    left: -16px;
     top: -24px;
     background-color: #fff;
     z-index: 100;
@@ -56,25 +56,11 @@ nav > div:last-child{
     overflow: auto;
     display: flex;
     flex-direction: column;
-    transition: all .5s ease-in-out;
-}
-.burger_active{
-    overflow: hidden;
-}
-.burger_active .burger-menu__content{
-    left: -16px;
 }
 .burger-menu__top{
     display: flex;
     padding: 23px 24px;
     align-items: center;
-}
-.burger-menu__top button{
-    padding: 0;
-    border: 0;
-    background: none;
-    cursor: pointer;
-
 }
 .burger-menu__close{
     margin: 0 16px 0 0 ;
@@ -112,24 +98,19 @@ nav > div:last-child{
 }
 .burger-menu__bottom{
     margin: auto 0 0 0;
-    padding: 0 24px 32px 24px;    
-}
-.burger-menu__bottom a{
-    display: block;
+    padding: 0 24px;    
 }
 .burger-menu__soc-icons{
     display: flex;
     gap: 16px;
 }
 .burger-menu__email{
-    margin: 16px 0 0 0;
     color: #1B1C21;
     font: 16px var(--lakesFont);
 }
 .burger-menu__tel{
     color: #1B1C21;
     font:700 24px var(--lakesFont);
-    margin: 12px 0 40px 0;
 }
 .burger-menu__lanq{
     display: flex;
@@ -143,7 +124,7 @@ nav > div:last-child{
     font: 16px var(--lakesFont);
     transition: all .3s ease-in-out;
 }
-.burger-menu__lanq button:hover,.burger-menu__lanq .burger-menu__lanq_active{
+.burger-menu__lanq button:hover, .burger-menu__lanq_active{
     color: #7E7E82;
 }
 .burger__btn{

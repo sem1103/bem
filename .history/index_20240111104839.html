@@ -25,12 +25,7 @@
 
                     <div class="burger-menu__content">
                         <ul class="burger-menu__top">
-                            <li class="burger-menu__close"><button >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <rect width="40" height="40" rx="20" fill="#FF3E79"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7935 12.2571C13.403 11.8666 12.7698 11.8666 12.3793 12.2571L12.2571 12.3793C11.8666 12.7698 11.8666 13.403 12.2571 13.7935L18.4636 20L12.2571 26.2065C11.8666 26.597 11.8666 27.2302 12.2571 27.6207L12.3793 27.7429C12.7698 28.1334 13.403 28.1334 13.7935 27.7429L20 21.5364L26.2065 27.7429C26.597 28.1334 27.2302 28.1334 27.6207 27.7429L27.7429 27.6207C28.1334 27.2302 28.1334 26.597 27.7429 26.2065L21.5364 20L27.7429 13.7935C28.1334 13.403 28.1334 12.7698 27.7429 12.3793L27.6207 12.2571C27.2302 11.8666 26.597 11.8666 26.2065 12.2571L20 18.4636L13.7935 12.2571Z" fill="white"/>
-                                  </svg>
-                            </button></li>
+                            <li class="burger-menu__close"><button >X</button></li>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="98" height="52" viewBox="0 0 98 52" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5703 0.726074C36.018 0.726074 35.5703 1.17379 35.5703 1.72607V6.00103C35.5703 6.55331 36.018 7.00103 36.5703 7.00103H72.8973C83.0242 7.00103 90.9777 14.7977 90.9777 24.8905C90.9777 25.1761 91.2092 25.4076 91.4948 25.4076H96.757C97.0425 25.4076 97.274 25.1761 97.274 24.8905C97.274 11.4012 86.432 0.726074 72.8973 0.726074H36.5703Z" fill="#6B7B84" stroke="#80949F" stroke-width="0.5"/>
@@ -55,8 +50,8 @@
                         </ul>
     
                         <ul class="burger-menu__list">
-                            <li ><a href="">Ремонт техники</a></li>
-                            <li class="burger-menu__list_active"><a href="">Услуги и сервисы</a></li>
+                            <li class="burger-menu__list_active"><a href="">Ремонт техники</a></li>
+                            <li><a href="">Услуги и сервисы</a></li>
                             <li><a href="">Корпоративным клиентам</a></li>
                             <li><a href="">Продавцам техники</a></li>
                             <li><a href="">Партнерам</a></li>
@@ -93,7 +88,7 @@
                                 </a></li>
                             </ul>
 
-                            <a href="mailto:mail@cps.com" class="burger-menu__email">mail@cps.com</a> 
+                            <a href="mailto:mail@cps.com" class="burger-menu__email">mail@cps.com</a> <br>
                             <a href="tel:+7 800 890 8900" class="burger-menu__tel">8 800 890 8900</a>
                             <ul class="burger-menu__lanq">
                                 <li><button class="burger-menu__lanq_active">RU</button></li>
@@ -219,20 +214,6 @@
 
         <footer></footer>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', ()=>{
-            let burgerOpenBtn = document.querySelector('.burger__btn');
-            let burgerCloseBtn = document.querySelector('.burger-menu__close');
-
-            burgerOpenBtn.onclick = burgerMenuHandler;
-            burgerCloseBtn.onclick = burgerMenuHandler;
-
-            function burgerMenuHandler(){
-                document.querySelector('body').classList.toggle('burger_active')
-            }
-        })
-    </script>
 </body>
 
 </html>

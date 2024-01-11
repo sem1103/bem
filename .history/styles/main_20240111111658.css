@@ -58,9 +58,6 @@ nav > div:last-child{
     flex-direction: column;
     transition: all .5s ease-in-out;
 }
-.burger_active{
-    overflow: hidden;
-}
 .burger_active .burger-menu__content{
     left: -16px;
 }
@@ -73,8 +70,6 @@ nav > div:last-child{
     padding: 0;
     border: 0;
     background: none;
-    cursor: pointer;
-
 }
 .burger-menu__close{
     margin: 0 16px 0 0 ;
